@@ -5,32 +5,31 @@
 //  Created by Kris Laratta on 10/22/22.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [
-        SortDescriptor(\.title),
-        SortDescriptor(\.author)
-    ]) var books: FetchedResults<Book>
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: [
+        SortDescriptor(\Book.title),
+        SortDescriptor(\Book.author)
+    ]) var books: [Book]
     
     @State private var showingAddScreen = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(books) { book in
-                    NavigationLink {
-                        DetailView(book: book)
-                    } label: {
+                    NavigationLink(value: book) {
                         HStack {
                             EmojiRatingView(rating: book.rating)
                                 .font(.largeTitle)
-                            
+
                             VStack(alignment: .leading) {
-                                Text(book.title ?? "Unknown Title")
+                                Text(book.title)
                                     .font(.headline)
-                                Text(book.author ?? "Unknown Author")
+                                Text(book.author)
                                     .foregroundColor(.secondary)
                             }
                         }
@@ -38,16 +37,17 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteBooks)
             }
+            .navigationDestination(for: Book.self) { book in
+                DetailView(book: book)
+            }
             .navigationTitle("Bookworm")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Add Book", systemImage: "plus") {
                         showingAddScreen.toggle()
-                    } label: {
-                        Label("Add Book", systemImage: "plus")
                     }
                 }
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .topBarLeading) {
                     EditButton()
                 }
             }
@@ -63,16 +63,11 @@ struct ContentView: View {
             let book = books[offset]
             
             // delete it from the context
-            moc.delete(book)
-            
-            // save the context
-            try? moc.save()
+            modelContext.delete(book)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }

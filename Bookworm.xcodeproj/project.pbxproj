@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84D853F82B2F8AEC001D0A40 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D853F72B2F8AEC001D0A40 /* Book.swift */; };
 		84EEBC912904434A00398F52 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBC902904434A00398F52 /* BookwormApp.swift */; };
 		84EEBC932904434A00398F52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBC922904434A00398F52 /* ContentView.swift */; };
 		84EEBC952904434B00398F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EEBC942904434B00398F52 /* Assets.xcassets */; };
 		84EEBC982904434B00398F52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EEBC972904434B00398F52 /* Preview Assets.xcassets */; };
-		84EEBCA02904473F00398F52 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBC9E2904473F00398F52 /* Bookworm.xcdatamodeld */; };
-		84EEBCA2290447D100398F52 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBCA1290447D100398F52 /* DataController.swift */; };
 		84EEBCA429044FF200398F52 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBCA329044FF200398F52 /* AddBookView.swift */; };
 		84EEBCA62904540600398F52 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBCA52904540600398F52 /* RatingView.swift */; };
 		84EEBCA8290456D500398F52 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEBCA7290456D500398F52 /* EmojiRatingView.swift */; };
@@ -20,13 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84D853F72B2F8AEC001D0A40 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		84EEBC8D2904434A00398F52 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEBC902904434A00398F52 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		84EEBC922904434A00398F52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84EEBC942904434B00398F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EEBC972904434B00398F52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		84EEBC9F2904473F00398F52 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
-		84EEBCA1290447D100398F52 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		84EEBCA329044FF200398F52 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		84EEBCA52904540600398F52 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		84EEBCA7290456D500398F52 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
@@ -64,12 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				84EEBC902904434A00398F52 /* BookwormApp.swift */,
+				84D853F72B2F8AEC001D0A40 /* Book.swift */,
 				84EEBC922904434A00398F52 /* ContentView.swift */,
-				84EEBC9E2904473F00398F52 /* Bookworm.xcdatamodeld */,
 				84EEBCA329044FF200398F52 /* AddBookView.swift */,
 				84EEBCA7290456D500398F52 /* EmojiRatingView.swift */,
 				84EEBCA52904540600398F52 /* RatingView.swift */,
-				84EEBCA1290447D100398F52 /* DataController.swift */,
 				84EEBC942904434B00398F52 /* Assets.xcassets */,
 				84EEBCA929045ABA00398F52 /* DetailView.swift */,
 				84EEBC962904434B00398F52 /* Preview Content */,
@@ -113,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					84EEBC8C2904434A00398F52 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -157,9 +154,8 @@
 			files = (
 				84EEBC932904434A00398F52 /* ContentView.swift in Sources */,
 				84EEBCAA29045ABA00398F52 /* DetailView.swift in Sources */,
-				84EEBCA2290447D100398F52 /* DataController.swift in Sources */,
 				84EEBCA8290456D500398F52 /* EmojiRatingView.swift in Sources */,
-				84EEBCA02904473F00398F52 /* Bookworm.xcdatamodeld in Sources */,
+				84D853F82B2F8AEC001D0A40 /* Book.swift in Sources */,
 				84EEBCA62904540600398F52 /* RatingView.swift in Sources */,
 				84EEBC912904434A00398F52 /* BookwormApp.swift in Sources */,
 				84EEBCA429044FF200398F52 /* AddBookView.swift in Sources */,
@@ -205,6 +201,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -265,6 +262,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -299,6 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,19 +363,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		84EEBC9E2904473F00398F52 /* Bookworm.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				84EEBC9F2904473F00398F52 /* Bookworm.xcdatamodel */,
-			);
-			currentVersion = 84EEBC9F2904473F00398F52 /* Bookworm.xcdatamodel */;
-			path = Bookworm.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 84EEBC852904434A00398F52 /* Project object */;
 }
